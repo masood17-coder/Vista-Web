@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveling Vista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header>
+    <h1>Traveling Vista</h1>
+    <p>Your perfect travel partner</p>
+    <nav>
+      <ul>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <section id="hero">
+    <div class="hero-overlay">
+      <h2>Explore the World — Easily and Beautifully</h2>
+      <p>Discover curated destinations, flexible packages, and instant booking. Start your journey here.</p>
+      <form action="/search" method="get">
+        <input name="place" type="text" placeholder="Where do you want to go?" />
+        <input name="from" type="date" />
+        <input name="to" type="date" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  
+  <section id="packages">
+    <h2>Popular Travel Packages</h2>
+    <div class="package-grid">
+
+      <article class="package-card">
+        <h3>3 Days — Murree</h3>
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Murree">
+        <p>Starting Price: 15,000 PKR</p>
+        <form action="/book" method="post">
+          <input type="hidden" name="package" value="Murree 3 Days" />
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <button type="submit">Book Now</button>
+        </form>
+      </article>
+
+      <article class="package-card">
+        <h3>3 Days — Islamabad</h3>
+        <img src="Images/islamabad2.avif" alt="Islamabad">
+        <p>Starting Price: 10,000 PKR</p>
+        <form action="/book" method="post">
+          <input type="hidden" name="package" value="Islamabad 3 Days" />
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <button type="submit">Book Now</button>
+        </form>
+      </article>
+
+      <article class="package-card">
+        <h3>4 Days — Swat</h3>
+        <img src="Images/Swat2.avif" alt="Swat">
+        <p>Starting Price: 20,000 PKR</p>
+        <form action="/book" method="post">
+          <input type="hidden" name="package" value="Swat 4 Days" />
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <button type="submit">Book Now</button>
+        </form>
+      </article>
+
+      <article class="package-card">
+        <h3>5 Days — Gilgit</h3>
+        <img src="Images/Gilgit2.webp" alt="Gilgit">
+        <p>Starting Price: 18,0000 PKR</p>
+        <form action="/book" method="post">
+          <input type="hidden" name="package" value="Gilgit 5 Days" />
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <button type="submit">Book Now</button>
+        </form>
+      </article>
+
+    </div>
+  </section>
+
+ 
+  <section id="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destination-grid">
+
+      <article class="destination-card">
+        <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b" alt="Lahore">
+        <h3>Lahore</h3>
+        <p>Historical culture, food, and art.</p>
+      </article>
+
+      <article class="destination-card">
+        <img src="Images/Faisal Masjid.avif" alt="Islamabad">
+        <h3>Islamabad</h3>
+        <p>Modern capital city with greenery and landmarks.</p>
+      </article>
+
+      <article class="destination-card">
+        <img src="Images/Swat.avif" alt="Swat">
+        <h3>Swat</h3>
+        <p>Beautiful valleys, rivers, and mountains.</p>
+      </article>
+
+      <article class="destination-card">
+        <img src="Images/Gilgit.avif" alt="Gilgit">
+        <h3>Gilgit</h3>
+        <p>Gateway to Karakoram mountains and valleys.</p>
+      </article>
+
+    </div>
+  </section>
+
+  
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Traveling Vista provides safe and memorable travel experiences across Pakistan.</p>
+  </section>
+
+  
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="/contact" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+
+  
+  <footer>
+    <p>&copy; 2025 Traveling Vista. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
